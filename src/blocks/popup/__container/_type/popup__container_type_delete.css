@@ -1,9 +1,0 @@
-.popup__container_type_delete {
-  max-height: 220px;
-}
-
-@media screen and (max-width: 586px) {
-  .popup__container_type_delete {
-    max-height: 145px;
-  }
-}

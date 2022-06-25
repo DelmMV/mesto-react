@@ -56,16 +56,22 @@ class Api {
     }).then(this._errorHandler);
   }
 
-  addLike(id) {
-    return fetch(`https://mesto.${this._link}cards/${id}/likes`, {
-      method: "PUT",
-      headers: this._headers,
-    }).then(this._errorHandler);
-  }
+  // addLike(id) {
+  //   return fetch(`https://mesto.${this._link}cards/${id}/likes`, {
+  //     method: "PUT",
+  //     headers: this._headers,
+  //   }).then(this._errorHandler);
+  // }
 
-  removeLike(id) {
+  // removeLike(id) {
+  //   return fetch(`https://mesto.${this._link}cards/${id}/likes`, {
+  //     method: "DELETE",
+  //     headers: this._headers,
+  //   }).then(this._errorHandler);
+  // }
+  changeLikeCardStatus(id, isLiked) {
     return fetch(`https://mesto.${this._link}cards/${id}/likes`, {
-      method: "DELETE",
+      method: isLiked ? 'PUT' : 'DELETE',
       headers: this._headers,
     }).then(this._errorHandler);
   }

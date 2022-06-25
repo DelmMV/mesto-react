@@ -113,10 +113,25 @@ function App() {
 							handleCardDelete={handleCardDelete}
 					/>
 					<Footer/>
-					<EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={handleUpdateUser}/>
-					<EditAvatarPopup isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} onUpdateAvatar={handleUpdateAvatar}/>
-					<AddPlacePopup isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} onAddPlace={handleAddPlaceSubmit}/>
-					<ImagePopup card={selectedCard} onClose={closeAllPopups}/>
+					<EditProfilePopup
+							isOpen={isEditProfilePopupOpen}
+							onClose={closeAllPopups}
+							onUpdateUser={handleUpdateUser}
+					/>
+					<EditAvatarPopup
+							isOpen={isEditAvatarPopupOpen}
+							onClose={closeAllPopups}
+							onUpdateAvatar={handleUpdateAvatar}
+					/>
+					<AddPlacePopup
+							isOpen={isAddPlacePopupOpen}
+							onClose={closeAllPopups}
+							onAddPlace={handleAddPlaceSubmit}
+					/>
+					<ImagePopup
+							card={selectedCard} on
+							Close={closeAllPopups}
+					/>
 				</CardsContext.Provider>
 			</CurrentUserContext.Provider>
 	);
